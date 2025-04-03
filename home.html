@@ -8,7 +8,10 @@
 <title>TravelNest</title>      
 <body>
     <header>
-        <img src="public/picture-source/logo.png" id="logo" alt="travelnestlogo.png">
+        <div class="logo-container">
+        <img src="public/picture-source/logo-wo-back.png" id="logo" alt="travelnestlogo.png">
+        <h1>TravelNest<br>Domestic Travel</h1>
+    </div>
         <nav>
             <div class="header-right">
             <ul>
@@ -67,26 +70,35 @@
     <h2>How do we work?</h2> 
 
     <div class="secondbox">
-        <h2>1000+</h2>
+        <h1><span class="highlight">1000+</span></h1>
         <p>Travelers</p>
+        <div class="down-arrows">
+            &#9660;
+        </div>
     </div>
 
     <div class="secondbox">
-        <h2>150+</h2>
+        <h1><span class="highlight">150+</span></h1>
         <p>Destinations</p>
+        <div class="down-arrows">
+            &#9660;
+        </div>
     </div>
 
     <div class="secondbox">
-        <h2>50+</h2>
+        <h1><span class="highlight">50+</span></h1>
         <p>Companies</p>
+        <div class="down-arrows">
+            &#9660;
+        </div>
     </div>
 
     <div class="offer-text">
-        <h2>You choose, we help you to find the best <br><span class="highlight">OFFER</span>.</h2>
+        <h3>You choose, we help you to find the best <br><span class="highlight">OFFER</span>.</h3>
     </div>
 
     <div class="button-container">
-        <a href="aboutus.html" class="find-out-btn">Find Out More</a>
+        <a href="aboutus.html" class="find-out-btn">Find Out More About Us >></a>
     </div>
 </div>
 
@@ -119,22 +131,25 @@
                 </a>
             </div>
             <div class="thirdboxtwo">
-                <h3>South</h3>
+               
                 <a href="src/pages-html/south.html">
                     <img src="public/picture-source/bulgan.jpeg" alt="South.jpeg">
                 </a>
+                <h3>South</h3>
             </div>
             <div class="thirdboxtwo">
                 <h3>Center</h3>
                 <a href="src/pages-html/center.html">
                     <img src="public/picture-source/ulaanbaatar.jpg" alt="Center.jpeg">
+                
                 </a>
             </div>
             <div class="thirdboxtwo">
-                <h3>East</h3>
+                
                 <a href="src/pages-html/east.html">
                     <img src="public/picture-source/bayankhongor.jpeg" alt="East.jpeg">
                 </a>
+                <h3>East</h3>
             </div>
             <div class="thirdboxtwo">
                 <h3>West</h3>
@@ -146,48 +161,56 @@
         
     </div>
     
-
     <div class="Mapsection">
-        <h2>Find your place</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=...your embed code..." 
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <h2>Find Your Place</h2>
+        <div class="MapContainer">
+          <iframe 
+            width="600" 
+            height="450" 
+            style="border:0" 
+            loading="lazy" 
+            allowfullscreen 
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=Mongolia">
+          </iframe>
+        </div>
     </div>
-   
+      
     <div class="fourthline">
         <h2>Helpful Information</h2>
         <div class="fourthbox">
-            <div class="main-content">
-                <div class="box-item">
-                    <img src="public/picture-source/itinerary.jpeg" alt="Nature1">
-                    <div class="box-content">
-                        <h2>Must See in Mongolia</h2>
-                        <p>Монголд заавал очиж үзэх газруудын талаарх хуудас</p>
-                        <a href="src/pages-html/reading1.html" class="view-more">Read</a>
-                    </div>
-                </div>
-    
-                <div class="box-item">
-                    <img src="public/picture-source/itenary.jpg" alt="Nature2">
-                    <div class="box-content">
-                        <h2>Why Tourists Love Mongolian Nature</h2>
-                        <p>Яагаад дуртай талаар.</p>
-                        <a href="src/pages-html/reading2.html" class="view-more">Read</a>
-                    </div>
-                </div>
-            </div>
-    
             <div class="aside">
-                <div class="box-item">
+                
                     <img src="public/picture-source/bayan-ulgii.jpg" alt="Nature3">
                     <div class="box-content">
                         <h2>You Need to Prepare</h2>
                         <p>Монголд ирэхдээ зэрэг мэдээлэл</p>
                         <a href="src/pages-html/reading3.html" class="view-more">Read</a>
-                    </div>
+                    
+                </div>
+            </div>
+    
+            <div class="main-content">
+                
+                    <img src="public/picture-source/itinerary.jpeg" alt="Nature1">
+                    <div class="box-content">
+                        <h2>Must See in Mongolia</h2>
+                        <p>Монголд заавал очиж үзэх газруудын талаарх хуудас</p>
+                        <a href="src/pages-html/reading1.html" class="view-more">Read</a>
+                    
+                </div>
+    
+              
+                    <img src="public/picture-source/itenary.jpg" alt="Nature2">
+                    <div class="box-content">
+                        <h2>Why Tourists Love Mongolian Nature</h2>
+                        <p>Яагаад дуртай талаар.</p>
+                        <a href="src/pages-html/reading2.html" class="view-more">Read</a>
                 </div>
             </div>
         </div>
     </div>
+    
 
     <div class="fifthline">
         <h2>Find your destination</h2>
@@ -260,7 +283,7 @@
         </div>
 
     <footer>
-        <p>Copyright 2024 TravelNest. All rights reserved.</p>
+        <p>Copyright 2025 &#169 TravelNest. All rights reserved.</p>
 
     </footer>
 

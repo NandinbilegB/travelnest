@@ -1,7 +1,14 @@
 body {
 background-color: #163966;
 color: white;
+margin: 0;
+padding: 0;
 font-family: 'Albert Sans','light', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Хэмжээг зөв тооцоолох */
 }
 
 header {
@@ -11,12 +18,30 @@ align-items: center;
 background-color: #0a1e3e;
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 padding: 10px 10px;
+width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Scroll хийхэд бүх элементийн дээр харагдуулна */
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between logo and text */
+}
+header h1 {
+  font-size: 16px; /* Том хэмжээг багасгав */
+  font-weight: 500; /* Default нь 700 буюу хэт бүдүүн байдаг. 500 нь илүү зөөлөн харагдана */
+  color: white;
+  padding-right: 10px;
+  margin: 0; /* Дээд, доод илүүдэл зайг хасах */
 }
 
 #logo {
-max-height: 40px;
+  height: 50px;
 margin-left: 30px;
 }
+
 header .header-right img {
     filter: invert(1); /* Зургийн өнгийг цагаан болгох */
   }
@@ -40,11 +65,11 @@ margin-left: 20px;
 height: 30px;
 display: flex;
 padding-right: 10px;
-  align-items: center; 
+align-items: center; 
 border-right: 0.5px solid white; 
 }
 header nav ul li:last-child {
-    border-right: none; /* Сүүлийн `li` элементэд зураас байхгүй */
+    border-right: none; 
 }
 
 header nav ul li a {
@@ -63,7 +88,7 @@ background-color: #02afef;
 .header-right {
   display: flex;
   align-items: center;
-  gap: 15px; /* Хоорондын зай */
+  gap: 15px; 
   margin-left: auto;
 }
 
@@ -77,12 +102,12 @@ background-color: #02afef;
 
 
 .search-btn i, .login-btn i {
-  font-size: 24px; /* Adjust the icon size */
-  color: white;    /* Icon color */
+  font-size: 24px; 
+  color: white;    
 }
 
 .search-btn:hover, .login-btn:hover {
-  color: #ddd;  /* Change color on hover */
+  color: #ddd; 
 }
 
 @media only screen and (max-width: 768px) {
@@ -171,6 +196,7 @@ header nav ul li {
   .text-overlay h2 {
     position: relative;
     top: 20%;
+    font-weight: 300;
     font-size: 3rem;
     width: 100%;
     margin: 0;
@@ -218,22 +244,37 @@ header nav ul li {
     right: 10px;
   }
 
-  .secondline {
+.secondline {
     color: black;
     font-size: 24px;
     width: 100%;
     background:white;
     position: relative;
     margin: 0;
-    padding: 10px;
-    text-align: center; /* Center text for all elements */
+    padding: 50px;
+    text-align: center; 
+    font-family: 'Albert Sans','light', sans-serif;
 }
-
+.highlight {
+  color:  #163966; /* Цэнхэр өнгө */
+  font-weight: bold; /* Хүсвэл үсгийг бүдүүн болгоно */
+}
+.down-arrows {
+  color:  #163966; /* Цэнхэр өнгө */
+  font-weight: bold; /* Хүсвэл үсгийг бүдүүн болгоно */
+}
+.secondline h2 {
+  text-align: left;  /* Aligns only the heading to the left */
+  margin-left: 0;
+  font-weight: 300;
+  font-family: 'Albert Sans','light', sans-serif; /* Ensures it's at the start */
+}
 .secondline .secondbox {
     display: inline-block; /* Aligns the boxes in a row */
     width: 30%; /* Adjust the width to fit 3 boxes in a row */
-    padding: 0;
+    padding: 10px;
     margin: 10px;
+    font-weight: 300;
     font-size: 24px;
     text-align: center;
     color: black;
@@ -242,15 +283,19 @@ header nav ul li {
 
 .offer-text {
     margin-top: 10px;
+    padding: 10px;
+    font-weight: 300;
     font-size: 24px;
     color: black; /* Adds space above the offer text */
 }
 
 .button-container {
-    margin-top: 10px; /* Adds space above the button */
+    margin-top: 10px; 
+    padding: 10px;/* Adds space above the button */
 }
 .secondline .find-out-btn {
   text-align: right;
+  padding: 10px;
 }
 .find-out-btn {
     text-decoration: none;
@@ -273,40 +318,45 @@ justify-content: space-around;
 align-items: center;
 border-radius: 20px;
 flex-wrap: wrap;
-padding: 20px; /* Added padding for spacing */
+font-weight: 300;
+font-family: 'Albert Sans','light', sans-serif; 
+padding: 50px;
 }
-/* Styling for the trip-ideas section */
-/* Styling for the trip-ideas section */
+
+.thirdline h2 {
+  text-align: left;  /* Aligns only the heading to the left */
+  margin-left: 0;
+  font-weight: 300;
+  font-family: 'Albert Sans','light', sans-serif;  /* Added padding for spacing */
+  }
+
 .trip-ideas {
   text-align: center; /* Center the title (h2) and boxes */
-  margin-bottom: 40px; /* Add space below the section */
+  margin-bottom: 40px;
+  font-weight: 300; /* Add space below the section */
 }
-
-/* Styling for the trip-ideas header */
-.trip-ideas h2 {
-  margin-bottom: 20px; /* Add space below the title */
-}
-
-/* Styling for the individual thirdbox elements */
 .thirdbox {
   display: inline-block; /* Display boxes in a row */
   width: 30%; /* Make the boxes take up 30% of the container width */
   padding: 10px;
+  font-weight: 300;
+  margin: 10px;
   text-align: left;
+
   vertical-align: top; 
   font-size: 18px;/* Align boxes at the top */
 }
 
-/* Make the image responsive */
 .thirdbox img {
-  max-width: 100%;
-  height: auto;
-  width: 80%;
-  height: 80%;
+  width: 100%; /* Зургийг автоматаар тохируулах */
+  height: 200px; /* Зургийн өндөрийг ижил байлгах */
+  object-fit: cover; /* Зургийг пропорцоор тайрах */
   border-radius: 20px;
+  font-weight: 300;
+  margin-top: 20px;
+
 }
 
-/* Button styling */
 .button-1 {
   display: inline-block;
   padding: 10px 20px;
@@ -316,38 +366,40 @@ padding: 20px; /* Added padding for spacing */
   text-decoration: none;
   margin-top: 16px;
 }
-/* Styling for the regions section */
+
 .regions {
-  text-align: center; /* Center the title (h1) and boxes */
-  margin-bottom: 20px; /* Add space below the section */
+  text-align: center; /* Center the title (h2) and boxes */
+  margin-bottom: 40px;
+  font-weight: 300;
 }
 
-/* Styling for the regions header */
-.regions h1 {
-  margin-bottom: 10px; /* Add space below the title */
+.regions h2 {
+  margin-bottom: 20px; 
+  font-weight: 300;/* Add space below the title */
 }
 
-/* Styling for the individual thirdboxtwo elements */
 .thirdboxtwo {
-  display: inline-block; /* Display boxes in a row */
-  width: 15%; /* Adjusted width to fit all 5 items in one row */
+  display: inline-block; 
+  width: 180px; /* Adjusted width to fit all 5 items in one row */
   padding: 10px;
   box-sizing: border-box;
   text-align: center;
+  border-radius: 20px;
   gap:5px;
-  vertical-align: top; /* Align boxes at the top */
-  margin-right: 2%; /* Optional: Adds some space between the boxes */
+  vertical-align: top; /* Align boxes at the top */ /* Optional: Adds some space between the boxes */
+}
+.thirdboxtwo:hover {
+  background-color: #0a1e3e; /* Change background on hover */
+  color: white; /* Change text color to white on hover */
 }
 
-
-/* Make the image responsive */
 .thirdboxtwo img {
-  width: 200px;
+  width: 100%;
   height: 300px;
+  object-fit: cover;
   border-radius: 20px;
 }
 
-/* Optional: Add a little margin below the images */
 .thirdboxtwo h3 {
   margin-bottom: 10px;
 }
@@ -380,50 +432,105 @@ width: 25px;  /* Set the size of the icon */
   width: 100%;
 }
 
+.fourthline h2 {
+  margin-left: 0;
+  font-size: 36px;
+  font-weight: 300;
+  text-align: left;
+  color: white;
+}
+
 .fourthbox {
-  display: flex; /* Ensures the child items are aligned using flexbox */
-  justify-content: center; /* Center the items inside the box */
-  align-items: center; /* Vertically center the items */
-  flex-wrap: wrap; /* Ensure items wrap to a new line if they don't fit */
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
 }
 
-.fourthline .fourthbox .box-item img {
-  width: 150px; /* Set a more reasonable width for images */
-  height: auto; /* Maintain the aspect ratio of the images */
-  margin: 10px; /* Add some space around the images */
+.aside {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white; 
+  padding: 20px;
+  height:600px;
+  width: 30%;
+  border-radius: 8px;
 }
 
-.more {
+.main-content {
+  flex: 2; 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height:300px;
+  width: 60%;
+}
+
+.box-item {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.box-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.box-content {
+  padding: 10px;
+  text-align: center;
+}
+
+.view-more {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
   text-decoration: none;
-  color: #0a1e3e;
-  font-weight: bold;
-  border: 2px solid #0a1e3e;
-  padding: 5px 10px;
   border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s; /* Added transition for color change */
 }
-
-.more:hover {
-  background-color: #0a1e3e; /* Change background on hover */
-  color: white; /* Change text color to white on hover */
-}
-
 
 .view-more:hover {
   background-color: #0a1e3e;
   color: white;
 }
 
+
 .Mapsection {
-  text-align: center;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
   flex-direction: column;
-   background-color:white; 
-  }
+  background-color: white; 
+  padding: 50px;
+  font-family: 'Albert Sans', sans-serif;
+}
+
+.Mapsection h2 {
+  align-self: flex-start; /* Aligns h2 to the left */
+  margin-left: 0;
+  font-size: 24px; /* Adjust as needed */
+  font-weight: 300;
+  text-align: left;
+  color:#0a1e3e;
+}
+
+.MapContainer {
+  display: flex;
+  justify-content: center; /* Centers the map */
+  width: 100%;
+}
+
 
 .fifthline {
 padding: 20px;
