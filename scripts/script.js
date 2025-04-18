@@ -11,3 +11,17 @@ document.addEventListener("click", function (e) {
         wave.remove();
     }, 500);
 });
+function scrollToSection(className) {
+  const section = document.querySelector(`.${className}`);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+
+  document.querySelectorAll(".nav-btn").forEach(btn => btn.classList.remove("active"));
+  event.target.classList.add("active");
+}
+function scrollToSection(id) {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  }
+  
