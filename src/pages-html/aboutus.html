@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelNest - About Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #0a1f44;
+            color: white;
+            padding: 15px 40px;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-container img {
+            height: 50px;
+        }
+
+        .logo-container h1 {
+            font-size: 20px;
+            line-height: 1.2;
+        }
+
+        .nav-links ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: #f0c040;
+        }
+
+        .image-text-sections {
+            padding: 50px 10%;
+        }
+
+        .image-text-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 60px;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .image-text-container.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .image-side, .text-side {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .image-side img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .text-side h2 {
+            font-size: 26px;
+            margin-bottom: 20px;
+            color: #0a1f44;
+        }
+
+        .text-side p {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        footer {
+            background-color: #0a1f44;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .image-text-container {
+                flex-direction: column;
+            }
+
+            .image-text-container.reverse {
+                flex-direction: column;
+            }
+
+            .nav-links ul {
+                flex-direction: column;
+                align-items: flex-end;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="/public/picture-source/logo.png" alt="TravelNest Logo">
+                <h1>TravelNest<br>Domestic Travel</h1>
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="/Home.html">Home</a></li>
+                    <li><a href="/src/pages-html/trips.html">Trips</a></li>
+                    <li><a href="/src/pages-html/destinations.html">Destinations</a></li>
+                    <li><a href="/src/pages-html/companies.html">Companies</a></li>
+                    <li><a href="/src/pages-html/createyourtrips.html">Plan your trip</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="image-text-sections">
+
+        <!-- Section 1 -->
+        <div class="image-text-container">
+            <div class="image-side">
+                <img src="/public/image 23.png" alt="Create your trip">
+            </div>
+            <div class="text-side">
+                <h2>Welcome to TravelNest</h2>
+                <p>Welcome to TravelNest, your gateway to discovering the captivating landscapes, rich cultural heritage, and one-of-a-kind adventures that Mongolia has to offer.</p>
+                <p>Established in 2000, Visit Mongolia has been a leader in providing exceptional and personalized travel experiences for travelers from around the world.</p>
+                <p>With over two decades of experience, we pride ourselves on delivering tours that are tailored to meet the diverse interests and preferences of our clients.</p>
+            </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="image-text-container reverse">
+            <div class="image-side">
+                <img src="/public/image 24.png" alt="Discover trips">
+            </div>
+            <div class="text-side">
+                <h2>Explore our travel services</h2>
+                <p>Luxury Tours: Enjoy the best of Mongolia in comfort and style with premium accommodations and exclusive experiences.</p>
+                <p>Short Tours: Ideal for travelers with limited time, our short tours showcase the highlights of Mongolia.</p>
+                <p>Festivals and Cultural Events: Experience Mongolia’s vibrant festivals including Naadam and Golden Eagle Festival.</p>
+            </div>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="image-text-container">
+            <div class="image-side">
+                <img src="/public/image 25.png" alt="Our support services">
+            </div>
+            <div class="text-side">
+                <h2>Our Full-time Support Services</h2>
+                <p>Airport Meet and Greet Services for a smooth arrival.</p>
+                <p>Hotel Transfers and Transportation for a seamless journey.</p>
+                <p>Hospitality Desk and Guest Assistance to support your travel needs.</p>
+            </div>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="image-text-container reverse">
+            <div class="image-side">
+                <img src="/public/image 26.png" alt="Our team">
+            </div>
+            <div class="text-side">
+                <h2>Meet the TravelNest Team</h2>
+                <p>At the core of TravelNest is our dedicated team of experienced travel professionals.</p>
+                <p>We are passionate about Mongolia and committed to providing the best possible travel experience.</p>
+                <p>We specialize in private, highly personalized tours that exceed expectations.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 TravelNest. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

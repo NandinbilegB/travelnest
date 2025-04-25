@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Top 5 Travel Companies - TravelNest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #001f3f;
+      color: white;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      width: 60px;
+      margin-right: 15px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #001f3f;
+    }
+
+    .company-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .company-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .company-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .company-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .company-card .content {
+      padding: 20px;
+    }
+
+    .company-card h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #001f3f;
+    }
+
+    .company-card p {
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    footer {
+      background-color: #001f3f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <header>
+    <div class="logo-container">
+      <img src="/public/picture-source/logo-wo-back.png" alt="TravelNest Logo">
+      <h2>TravelNest</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/Home.html">Home</a></li>
+        <li><a href="/src/pages-html/trips.html">Trips</a></li>
+        <li><a href="/src/pages-html/destinations.html">Destinations</a></li>
+        <li><a href="/src/pages-html/companies.html">Companies</a></li>
+        <li><a href="/src/pages-html/creatyourtrips.html">Plan Your Trip</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <main>
+    <h1>Travel Companies</h1>
+    <div class="company-grid">
+    
+      <div class="company-card">
+        <img src="/public/picture-source/company1.webp" alt="Company 1">
+        <div class="content">
+          <h2>Air travel</h2>
+          <p>One of the top-rated travel companies offering cultural and nature-focused experiences across Mongolia.</p>
+        </div>
+      </div>
+
+      
+      <div class="company-card">
+        <img src="/public/picture-source/company2.jpg" alt="Company 2">
+        <div class="content">
+          <h2>Steppe spirit travel</h2>
+          <p>Known for luxury and custom tours, Steppe Spirit provides unforgettable travel memories.</p>
+        </div>
+      </div>
+
+      
+      <div class="company-card">
+        <img src="/public/picture-source/company3.jpg" alt="Company 3">
+        <div class="content">
+          <h2>Keswick island</h2>
+          <p>Expert guides and deep exploration of Gobi and Central Mongolia. Perfect for adventure seekers.</p>
+        </div>
+      </div>
+
+      
+      <div class="company-card">
+        <img src="/public/picture-source/company4.png" alt="Company 4">
+        <div class="content">
+          <h2>Explore</h2>
+          <p>Popular among family and group travelers. They offer great packages with local flavor.</p>
+        </div>
+      </div>
+
+      
+      <div class="company-card">
+        <img src="/public/picture-source/company5.jpg" alt="Company 5">
+        <div class="content">
+          <h2>Lorem ipsum</h2>
+          <p>Specializing in Golden Eagle Festival and ethnic Kazakh experiences in Western Mongolia.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  
+  <footer>
+    <p>&copy; 2025 TravelNest. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

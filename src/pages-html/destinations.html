@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TravelNest | Destinations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f9fc;
+    }
+
+    /* Header */
+    header {
+      background-color: #0b1d3a;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-container img {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .logo-container h1 {
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 25px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Section */
+    .destinations-section {
+      padding: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .destinations-title {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 32px;
+      color: #0b1d3a;
+    }
+
+    .aimag-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .aimag-card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .aimag-card:hover {
+      transform: scale(1.03);
+      background-color: #eef3ff;
+    }
+
+    .aimag-card h3 {
+      font-size: 18px;
+      color: #0b1d3a;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #0b1d3a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo-container">
+      <img src="/public/picture-source/logo-wo-back.png" alt="logo">
+      <h1>TravelNest<br>Domestic Travel</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/Home.html">Home</a></li>
+        <li><a href="/src/pages-html/trips.html">Trips</a></li>
+        <li><a href="/src/pages-html/destinations.html">Destinations</a></li>
+        <li><a href="/src/pages-html/companies.html">Companies</a></li>
+        <li><a href="/src/pages-html/creatyourtrips.html">Plan your trip</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <section class="destinations-section">
+    <h2 class="destinations-title">Destinations - 21 аймаг</h2>
+    <div class="aimag-grid">
+        <a href="arkhangai.html" class="aimag-card"><h3>Архангай</h3></a>
+        <a href="bayan-ulgii.html" class="aimag-card"><h3>Баян-Өлгий</h3></a>
+        <a href="bayankhongor.html" class="aimag-card"><h3>Баянхонгор</h3></a>
+        <a href="bulgan.html" class="aimag-card"><h3>Булган</h3></a>
+        <a href="govi-altai.html" class="aimag-card"><h3>Говь-Алтай</h3></a>
+        <a href="govisumber.html" class="aimag-card"><h3>Говьсүмбэр</h3></a>
+        <a href="darkhan-uul.html" class="aimag-card"><h3>Дархан-Уул</h3></a>
+        <a href="dornogovi.html" class="aimag-card"><h3>Дорноговь</h3></a>
+        <a href="dornod.html" class="aimag-card"><h3>Дорнод</h3></a>
+        <a href="dundgovi.html" class="aimag-card"><h3>Дундговь</h3></a>
+        <a href="zavkhan.html" class="aimag-card"><h3>Завхан</h3></a>
+        <a href="orkhon.html" class="aimag-card"><h3>Орхон</h3></a>
+        <a href="uvurkhangai.html" class="aimag-card"><h3>Өвөрхангай</h3></a>
+        <a href="umnogovi.html" class="aimag-card"><h3>Өмнөговь</h3></a>
+        <a href="sukhbaatar.html" class="aimag-card"><h3>Сүхбаатар</h3></a>
+        <a href="selenge.html" class="aimag-card"><h3>Сэлэнгэ</h3></a>
+        <a href="tuv.html" class="aimag-card"><h3>Төв</h3></a>
+        <a href="uvs.html" class="aimag-card"><h3>Увс</h3></a>
+        <a href="khovd.html" class="aimag-card"><h3>Ховд</h3></a>
+        <a href="khuvsgul.html" class="aimag-card"><h3>Хөвсгөл</h3></a>
+        <a href="khentii.html" class="aimag-card"><h3>Хэнтий</h3></a>
+      </div>
+      
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 TravelNest. All rights reserved.
+  </footer>
+
+</body>
+</html>

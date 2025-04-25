@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arkhangai Province - TravelNest</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header, footer {
+      background-color: #001f3f;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header h1, footer p {
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .content {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+      background-color: white;
+    }
+
+    .province-info h2 {
+      color: #003366;
+    }
+
+    .info-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .info-grid img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .info-grid .text {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <h1>TravelNest</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/Home.html">Home</a></li>
+        <li><a href="/src/pages-html/trips.html">Trips</a></li>
+        <li><a href="/src/pages-html/destinations.html">Destinations</a></li>
+        <li><a href="/src/pages-html/companies.html">Companies</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="content province-info">
+    <h2>Архангай аймаг</h2>
+    <div class="info-grid">
+      <img src="/public/picture-source/arkhangai.jpeg" alt="Arkhangai Scenery" />
+      <div class="text">
+        <p><strong>Улаанбаатараас зай:</strong> ~465 км</p>
+        <p><strong>Онцлог:</strong> Архангай аймаг нь Хангайн бүсийн үзэсгэлэнт байгаль, түүхэн дурсгалт газруудаараа алдартай.</p>
+        <p><strong>Очиж болох газрууд:</strong></p>
+        <ul>
+          <li>Тэрхийн цагаан нуур</li>
+          <li>Хорго галт уул</li>
+          <li>Хархорум хотын туурь</li>
+          <li>Чулуут гол</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 TravelNest. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TravelNest - Trips</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      flex-wrap: wrap;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .trip-section {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .trip-section h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #1e3a8a;
+    }
+
+    .trip-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .trip-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 1rem;
+      transition: transform 0.2s;
+    }
+
+    .trip-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .trip-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .trip-card h3 {
+      color: #1e3a8a;
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background-color: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo-container">
+      <img src="/public/picture-source/logo.png" alt="TravelNest Logo" class="logo"/>
+      <h1>TravelNest</h1>
+    </div>
+    <nav class="nav-links">
+      <a href="/Home.html">Home</a>
+      <a href="/src/pages-html/trips.html">Trips</a>
+      <a href="/src/pages-html/destinations.html">Destinations</a>
+      <a href="/src/pages-html/companies.html">Companies</a>
+      <a href="/src/pages-html/creatyourtrips.html">Plan your trip</a>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <main class="trip-section">
+    <h2>Our Trips Around Mongolia</h2>
+    <div class="trip-grid">
+
+      <div class="trip-card">
+        <img src="/public/picture-source/trip1.jpg" alt="Trip 1" />
+        <h3>Southern Gobi Adventure</h3>
+        <p>Ulaanbaatar → Dalanzadgad → Yoliin Am → Khongor Dunes → Bayanzag</p>
+      </div>
+
+      <div class="trip-card">
+        <img src="/public/picture-source/trip2.jpg" alt="Trip 2" />
+        <h3>Khuvsgul Lake Retreat</h3>
+        <p>Ulaanbaatar → Murun → Khuvsgul Lake → Khatgal → Jargalant</p>
+      </div>
+
+      <div class="trip-card">
+        <img src="/public/picture-source/trip3.jpg" alt="Trip 3" />
+        <h3>Central Mongolia Discovery</h3>
+        <p>Ulaanbaatar → Kharkhorin → Tsenkher → Terkhiin Tsagaan Lake → Elsen Tasarkhai</p>
+      </div>
+
+      <div class="trip-card">
+        <img src="/public/picture-source/trip4.jpg" alt="Trip 4" />
+        <h3>Western Mongolia Expedition</h3>
+        <p>Ulaanbaatar → Ulgii → Altai Mountains → Tsambagarav → Eagle Festival</p>
+      </div>
+
+      <div class="trip-card">
+        <img src="/public/picture-source/trip5.jpg" alt="Trip 5" />
+        <h3>Nomadic Culture Trail</h3>
+        <p>Ulaanbaatar → Hustai → Khustai National Park → Ugii Lake → Tuv Province</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 TravelNest. All rights reserved.</p>
+  </footer>
+</body>
+</html>

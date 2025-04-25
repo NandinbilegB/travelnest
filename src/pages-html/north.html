@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+     <meta charset="utf-8">
+    <meta name="description" content="About TavelNest">
+    <link rel="stylesheet" href="../../src/styles/central.css">
+    <meta name="keywords" content="TravelNest, Travel, Discover, Mongolia">
+<title>TravelNest</title>
+</head>      
+<body>
+    <header>
+        <div class="logo-container">
+        <img src="../../public/picture-source/logo-wo-back.png" id="logo" alt="travelnestlogo.png">
+        <h1>TravelNest<br>Domestic Travel</h1>
+    </div>
+        <nav>
+            <div class="header-right">
+            <ul>
+                <li><a href="../../home.html">Home</a></li>
+                <li><a href="src/pages-html/trips.html">Trips</a></li>
+                <li><a href="src/pages-html/destinations.html">Destinations</a></li>
+                <li><a href="src/pages-html/companies.html">Companies</a></li>
+                <li><a href="src/pages-html/createyourtrips.html">Plan your trip</a></li>
+            </ul>
+            <!-- Search button -->
+                  <button class="search-btn">
+                   <img src="../../public/picture-source/search.png" alt="Search">
+                 </button>
+    
+            <!-- Login button -->
+                <button class="login-btn">
+                    <img src="../../public/picture-source/login.webp" alt="Login">
+                </button>
+            </div>
+        </nav>
+    </header>
+
+  <section class="banner">
+    <img src="../../public/picture-source/north.jpg" alt="Trip Hero">
+  </section>
+
+  <div class="tabs">
+    <button>Overview</button>
+    <button>Brief</button>
+    <button>Date</button>
+    <button>Price</button>
+    <button>Review</button>
+    <ul>
+      <li><a href="../pages-html/pay.html">Book Now</a></li>
+    </ul>
+  </div>
+
+  <main class="container">
+    <section class="overview">
+      <div class="tour-info">
+        <h3>Tour Information</h3>
+        <p>Tour code: code1</p>
+        <p>Duration: 7 days</p>
+        <p>Availability: any month</p>
+        <p>Trip from: Ulaanbaatar</p>
+      </div>
+      <div class="map">
+        <img src="../../public/picture-source/itenary1.png" alt="Map">
+      </div>
+      <div class="price-box">
+        <h3>Price</h3>
+        <p>Total price: 3110</p>
+        <ul>
+          <li>Hotel pay: 1000</li>
+          <li>Guide: 500</li>
+          <li>Meal: 600</li>
+          <li>Vehicle: 200</li>
+          <li>Entrance Fee: 100</li>
+          <li>Drink during travel: 600</li>
+          <li>Cultural show: 50</li>
+          <li>Tax and service: 60</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="brief">
+      <h3>Brief</h3>
+      <p>Day 01: Arrival in Ulaanbaatar, Mongolia</p>
+      <p>Day 02: Hustai National Park</p>
+      <p>Day 03: Karakorum & Erdenezuu Monastery</p>
+      <p>Day 04: Ongi, Middle Gobi</p>
+      <p>Day 05: Bayanzag (Flaming cliffs)</p>
+      <p>Day 06: Khongor Sand dunes</p>
+      <p>Day 07: Yol Valley, Mt. National Park</p>
+    </section>
+
+    <section class="review">
+      <h3>Review</h3>
+      <div class="review-card">
+        <div class="user-img"></div>
+        <div class="user-review">User1: Lorem ipsum dolor sit amet consectetur adipisicing elit...</div>
+      </div>
+      <div class="review-card">
+        <div class="user-img"></div>
+        <div class="user-review">User2: Lorem ipsum dolor sit amet consectetur adipisicing elit...</div>
+      </div>
+      <div class="review-card">
+        <div class="user-img"></div>
+        <div class="user-review">User3: Lorem ipsum dolor sit amet consectetur adipisicing elit...</div>
+      </div>
+      <div class="submit-review">
+        <ul>
+          <li><a href="review.html">Review us</a></li>
+        </ul> 
+      </div>
+    </section>
+  </main>
+  <div id="payment-section" class="payment-container" style="display: none;">
+    <section class="payment-container">
+      <div class="payment-left">
+        <img src="../../public/picture-source/logo-wo-back.png" class="payment-logo" alt="TravelNest Logo">
+        <h2>Төлбөрийн дүн</h2>
+        <p class="payment-amount">3110₮</p>
+        <div class="payment-breakdown">
+          <p>НӨАТ: 0</p>
+          <p>Нийт: 0</p>
+        </div>
+      </div>
+    
+      <div class="payment-right">
+        <h3>Холбогдох мэдээлэл</h3>
+        <input type="email" placeholder="И-мэйл" value="00Chukwudaniel@gmail.com" />
+    
+        <h3>Төлбөр төлөх</h3>
+        <input type="text" placeholder="Картын дугаар" />
+        <div class="card-details">
+          <input type="text" placeholder="MM/YY" />
+          <input type="text" placeholder="CVC" />
+        </div>
+        <input type="text" placeholder="Карт эзэмшигчийн нэр" />
+    
+        <select>
+          <option value="Mongolia">Mongolia</option>
+          <option value="Other">Other</option>
+        </select>
+        <input type="text" placeholder="Оршин суугаа хаяг" />
+        <input type="text" placeholder="Гудамж" />
+        <input type="text" placeholder="Дүүрэг" />
+        <input type="text" placeholder="Хот" />
+        <input type="text" placeholder="Zip код" />
+        <input type="text" placeholder="Аймаг" />
+    
+        <button class="pay-button">Төлөх</button>
+      </div>
+    </section>
+    
+    <h2>Төлбөр төлөх хэсэг</h2>
+    <!-- For now, you can just add some text or paste the full payment UI here later -->
+  </div>
+  
+  <script src="../../scripts/trip-detail.js"></script>
+</body>
+</html>
