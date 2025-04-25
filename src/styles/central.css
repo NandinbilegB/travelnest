@@ -1,0 +1,528 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure correct box-sizing for all elements */
+    user-select: none;
+  }
+  .banner img {
+    width: 100%;
+    height: 600px; /* or whatever fixed height you want */
+    object-fit: cover; /* ensures the image fills space without distortion */
+    display: block;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0a1e3e;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 10px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between logo and text */
+  }
+  
+  header h1 {
+    font-size: 16px;
+    font-weight: 500; /* Lighter weight for better readability */
+    color: white;
+    padding-right: 10px;
+    margin: 0; /* Remove top and bottom margins */
+  }
+  
+  #logo {
+    height: 50px;
+    margin-left: 30px;
+  }
+  
+  header .header-right img {
+    filter: invert(1); /* Inverts image to white */
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: flex-end; /* Fixed alignment issue */
+    align-items: center;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+  }
+  
+  header nav ul li {
+    margin-left: 20px;
+    height: 30px;
+    display: flex;
+    padding-right: 10px;
+    align-items: center;
+    border-right: 0.5px solid white;
+  }
+  
+  header nav ul li:last-child {
+    border-right: none;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: white;
+    background-color: #0a1e3e;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  header nav ul li a:hover {
+    background-color: #02afef;
+  }
+  
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto;
+  }
+  
+  button img {
+    height: 25px;
+    width: 25px;
+  }
+  
+  .fifthline {
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  
+  .fifthline h2 {
+    font-size: 36px;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    width: 700px;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    flex-grow: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ddd;
+    font-size: 16px;
+  }
+ /* Fix the container to center and add proper gap between buttons */
+.secondline {
+    display: flex;
+    justify-content: center;  /* Center the buttons */
+    gap: 20px;                /* 20px space between buttons */
+    padding: 20px;            /* Padding to prevent touching the container's edges */
+    flex-wrap: wrap;          /* Allows wrapping on smaller screens */
+    width: 100%;              /* Full width of the container */
+    text-align: center;       /* Centers any text inside buttons */
+  }
+  
+  /* Button style with hover effect */
+  .nav-btn, .book-btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    color: #333;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .nav-btn:hover, .book-btn:hover {
+    background-color: #ccc;
+    transform: scale(1.05);
+  }
+  
+  /* Active state */
+  .nav-btn.active {
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Book button specific styles */
+  .book-btn {
+    background-color: #ff6b6b;
+    color: white;
+  }
+  
+  /* Book button hover state */
+  .book-btn:hover {
+    background-color: #02afef;
+  }
+  
+/* Add the container styles */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 200px; /* 20px space between the buttons */
+    margin-top: 20px; /* Adjust margin if needed */
+    width: 100%; /* Ensure the container takes the full width */
+    text-align: center; /* Center the text inside buttons */
+    padding: 0 20px; /* Optional: add some padding to avoid touching edges */
+  }
+  
+  /* Button styles with hover effect */
+  button, .button-2 {
+    background-color: #0a1e3e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s ease;
+  }
+
+  .tabs {
+    display: flex;
+    margin-left: 200px;
+    gap: 32px;
+    margin-top: 20px;
+  }
+  .tabs button{
+    justify-content: center;
+    background-color: #707276;
+    gap: 20px; /* 20px space between the buttons */
+    width: 160px;
+    height: 50px; /* Ensure the container takes the full width */
+    text-align: center; /* Center the text inside buttons */
+    padding: 0px 20px; /* Optional: add some padding to avoid touching edges */
+  }
+
+  button:hover, .button-2:hover {
+    background-color: #02afef; /* Same hover effect as hero links */
+    transform: scale(1.05); /* Slight scale effect on hover */
+  }
+  .tabs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+.tabs ul li a{
+    text-decoration: none;
+    color: white;
+    width: 160px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: inherit;
+    text-align: center;
+    font-size: 16px;
+    background-color: #187f30;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+  justify-content: center;}
+  .tabs ul li a:hover {
+    background-color: #02afef;
+  }
+
+  .social-icons {
+    display: flex; /* Unified the duplicate .social-icons block */
+    justify-content: center;
+    gap: 15px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons img {
+    filter: brightness(0) invert(1);
+    width: 40px;
+    height: 40px;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.1);
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1);
+  }
+  
+  .website-link a {
+    font-size: 18px;
+    color: #0a1e3e;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #0a1e3e;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .website-link a:hover {
+    background-color: #0a1e3e;
+    color: white;
+  }
+  
+  .top-links {
+    display: flex;
+    gap: 40px;
+    text-align: left;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .top-link-section {
+    width: 48%;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .top-link-section h3 {
+    margin-bottom: 15px;
+  }
+  
+  .top-link-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .top-link-section li {
+    margin: 10px 0;
+  }
+  
+  .top-link-section li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+  }
+  
+  .top-link-section li a:hover {
+    color: #0073e6;
+    text-decoration: underline;
+  }
+  
+  footer {
+    padding: 10px;
+    background-color: #0a1e3e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: auto;
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+  }
+  
+  .wave {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(0, 123, 255, 0.5);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    animation: wave-anim 0.5s ease-out;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  
+  @keyframes wave-anim {
+    to {
+      transform: translate(-50%, -50%) scale(5);
+      opacity: 0;
+    }
+  }
+  
+  /* Trip detail layout */
+  main.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 80px 40px 40px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .overview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  
+  .overview .tour-info,
+  .overview .map,
+  .overview .price-box {
+    background-color: #0a1e3e;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 300px;
+    min-width: 250px;
+  }
+  
+  .overview h3 {
+    color: #02afef;
+    margin-bottom: 10px;
+  }
+  
+  .overview p,
+  .overview li {
+    color: white;
+    margin: 5px 0;
+  }
+  
+  .brief,
+  .review {
+    background-color: #0a1e3e;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .brief h3,
+  .review h3 {
+    color: #02afef;
+    margin-bottom: 10px;
+  }
+  
+  .brief p,
+  .user-review {
+    color: white;
+    margin: 5px 0;
+  }
+  
+  .review-card {
+    background-color: #163966;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .user-img {
+    width: 40px;
+    height: 40px;
+    background-color: #0a1e3e;
+    border-radius: 50%;
+  }
+  
+
+  .submit-review ul li a {
+    text-decoration: none;
+    color: white;
+    width: 150px;
+    background-color: #187f30;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;}
+    .submit-review ul li a:hover {
+      background-color: #02afef;
+      }
+
+  body {
+    overflow-x: hidden;
+  }
+  
+  .image-slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .payment-container {
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+    background-color: #0a2a4a;
+    color: white;
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 1000px;
+  }
+  
+  .payment-left {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .payment-logo {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .payment-amount {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .payment-breakdown p {
+    margin: 5px 0;
+  }
+  
+  .payment-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .payment-right input,
+  .payment-right select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: none;
+  }
+  
+  .card-details {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .pay-button {
+    background-color: white;
+    color: #0a2a4a;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
