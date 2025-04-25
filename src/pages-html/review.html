@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+  <meta charset="utf-8">
+  <meta name="description" content="About TravelNest">
+  <link rel="stylesheet" href="../../src/styles/review.css">
+  <meta name="keywords" content="TravelNest, Travel, Discover, Mongolia">
+  <title>TravelNest</title>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="../../public/picture-source/logo-wo-back.png" id="logo" alt="travelnestlogo.png">
+      <h1>TravelNest<br>Domestic Travel</h1>
+    </div>
+    <nav>
+      <div class="header-right">
+        <ul>
+          <li><a href="../../home.html">Home</a></li>
+          <li><a href="src/pages-html/trips.html">Trips</a></li>
+          <li><a href="src/pages-html/destinations.html">Destinations</a></li>
+          <li><a href="src/pages-html/companies.html">Companies</a></li>
+          <li><a href="src/pages-html/createyourtrips.html">Plan your trip</a></li>
+        </ul>
+        <button class="search-btn">
+          <img src="../../public/picture-source/search.png" alt="Search">
+        </button>
+        <button class="login-btn">
+          <img src="../../public/picture-source/login.webp" alt="Login">
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="review-page">
+    <div class="review-left">
+      <h2 id="review-title">Package Review – Central Region</h2>
+
+      <div id="region-reviews">
+        <div class="review-section" id="central-review">Central region review content here.</div>
+        <div class="review-section hidden" id="western-review">Western region review content here.</div>
+        <div class="review-section hidden" id="eastern-review">Eastern region review content here.</div>
+        <div class="review-section hidden" id="southern-review">Southern region review content here.</div>
+        <div class="review-section hidden" id="northern-review">Northern region review content here.</div>
+      </div>
+    </div>
+
+    <div class="review-right">
+      <img src="../../public/picture-source/central.jpg" class="region-img selected" data-region="central" alt="Central">
+      <img src="../../public/picture-source/west.jpg" class="region-img" data-region="western" alt="Western">
+      <img src="../../public/picture-source/east.jpg" class="region-img" data-region="eastern" alt="Eastern">
+      <img src="../../public/picture-source/south.jpeg" class="region-img" data-region="southern" alt="Southern">
+      <img src="../../public/picture-source/north.jpg" class="region-img" data-region="northern" alt="Northern">
+    </div>
+  </main>
+
+  <script src="../../scripts/review.js"></script>
+</body>
+</html>
